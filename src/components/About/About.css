@@ -33,8 +33,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: animate 2s infinite ease-in-out;
+    /* animation: animate 2s infinite ease-in-out; */
     /* border: 0.1rem solid var(--black); */
+}
+.left_about img{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 80px;
 }
 
 @keyframes animate {

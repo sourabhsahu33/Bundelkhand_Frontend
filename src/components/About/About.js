@@ -10,8 +10,9 @@ const About = () => {
       </div>
       <div className="about_desc">
         <div className='left_about'>
-         <h1 className='transnow'>Translate Now!</h1>
-         <p className='sub_ab'>Regional Language Translator.</p>
+          <img src='https://i.ibb.co/1rW3TLp/ttt.jpg'></img>
+         {/* <h1 className='transnow'>Translate Now!</h1> */}
+         {/* <p className='sub_ab'>Regional Language Translator.</p> */}
         </div>
         <div className='right_about'>
           <p className='para_right'>

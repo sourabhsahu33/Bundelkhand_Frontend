@@ -49,3 +49,9 @@ p{
 .scroll-to-top:hover {
     color: var(--blue);
 }
+
+.fff{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

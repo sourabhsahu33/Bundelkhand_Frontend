@@ -4,14 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--dark_blue);
+    /* background-color: var(--dark_blue); */
     color: var(--light_blue);
     padding: 10px 20px;
     position: fixed;
     z-index: 10;
-
+    transition: background-color 0.3s ease;
 }
-
+.scrolled {
+    background-color: var(--dark_blue);
+}
 .logo {
     font-family: var(--viga);
     font-size: 2rem;

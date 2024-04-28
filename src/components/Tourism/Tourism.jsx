@@ -6,13 +6,11 @@ const Tourism = () => {
     
     { url: "https://i.ibb.co/F3pLx7b/sanchi.jpg", title: "italy" },
     { url: "https://i.ibb.co/fMr9nCK/Bundel.jpg", title: "italy" },
-    
-    { url: "https://i.ibb.co/mNxGtdM/11-03-2021-bandakpur-maha-shivratri-2021-2021311-10269.jpg", title: "forest" },
     { url: "https://i.ibb.co/zV8XdKW/086927546-Orchha-Fort-Main.jpg", title: "city" },
     { url: "https://i.ibb.co/sHMFwZk/fsfsdfsdf.png", title: "italy" },
     { url: "https://i.ibb.co/ggNMQDK/Mansions.jpg", title: "italy" },
     { url: "https://i.ibb.co/VYVKRsK/pexels-robert-stokoe-105922-2668605.jpg", title: "italy" },
-    { url: "https://www.pannatigerreserve.in/Chinkara_001.gif ", title: "italy" },
+    
     { url: "https://i.ibb.co/XWkwk8v/khajuraho-temple-tour-2.jpg", title: "italy" },
     { url: "https://i.ibb.co/xqhhSYW/dundhwasehaotherangle.jpg", title: "italy" },
 

@@ -6,7 +6,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaYoutube,
-  FaComments,
+  FaNewspaper, // Updated icon for news
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -32,22 +32,25 @@ const Footer = () => {
           समान ही तो है"
         </p>
         <div className="social-links">
-          <a href="#" className="social-link">
+          <a href="https://www.facebook.com/Bundelkhand24x7" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaFacebook />
           </a>
-          <a href="#" className="social-link">
+          <a href="https://twitter.com/bundelkhandnews?lang=en" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaTwitter />
           </a>
-          <a href="#" className="social-link">
+          <a href="https://www.instagram.com/incrediblebundelkhand/" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaInstagram />
           </a>
-          <a href="#" className="social-link">
+          <a href="https://www.youtube.com/channel/UC_LN7Y5usUMHs7kMwP-dbrg" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaYoutube />
           </a>
-          <a href="#" className="social-link">
-            <FaComments />
+          <a href="https://www.bundelkhand24x7.com/" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaNewspaper /> {/* Updated icon for news */}
           </a>{" "}
-          {/* Icon for thread */}
+        </div>
+        <div className="fff">
+          <footer>  Created by &#169; Sourabh & &#169; Nikhil ! </footer>
+          
         </div>
       </div>
     </footer>

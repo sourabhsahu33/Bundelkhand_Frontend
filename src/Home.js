@@ -11,10 +11,25 @@ import Test from "./components/test/Test";
 import Signup from "./Signup";
 import Login from "./Login";
 import Tourism from "./components/Tourism/Tourism";
+
+// Import your images
+import i1 from "./images/sanchi-1.jpg";
+import i0 from "./images/mahakal.jpg";
+import p2 from "./images/tiger.jpg";
+import p3 from "./images/t1.jpg"
+import i2 from "./images/t2.jpg";
+import i3 from "./images/fort.avif";
+import i4 from "./images/bhedaghat.jpg";
+
+// import i5 from "./images/";
+// import i6 from "./images/Bundel.jpg";
+
 const Home = () => {
   const [userLoggedIn, setUserLoggedIn] = useState(false);
   const [loggedInPressed, setLoggedInPressed] = useState(false);
   const [signUpPressed, setSignUpPressed] = useState(false);
+  const [backgroundImages] = useState([i1,i0,p2,p3,i2,i3,i4]); 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const loggedIn = localStorage.getItem("userLoggedIn");
@@ -28,6 +43,16 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages]);
 
   const handleLogon = () => {
     setLoggedInPressed(true);
@@ -56,7 +81,13 @@ const Home = () => {
   return (
     <>
       <Navbar LoggedOut={handleLogout} />
-      <div id="home" className="home-banner">
+      <div
+        id="home"
+        className="home-banner"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${backgroundImages[currentImageIndex]}')`,
+        }}
+      >
         <div className="home-banner-text">
           <p id="hdesc">
             <TypeIt
