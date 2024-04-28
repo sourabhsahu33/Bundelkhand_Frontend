@@ -1,0 +1,39 @@
+:root {
+    --black: #17252A;
+    --dark_blue: #2B7A78;
+    --blue: #3AAFA9;
+    --light_blue: #DEF2F1;
+    --white: #FEFFFF;
+
+    --nunito: 'Nunito', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --protest_riot: 'Protest Riot', sans-serif;
+    --viga: 'Viga', sans-serif;
+}
+.tcontainer{
+    margin: 5px 30px;
+    padding: 5px 0;
+   
+}
+h2{
+    padding: 20px 0;
+    font-family: var(--poppins);
+    text-align: center;
+}
+.tcontainer {
+    text-align: center;
+  }
+  
+  .container {
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 300px) and (max-width: 800px) {
+    .container {
+      width: 90%; /* Adjust width for smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  

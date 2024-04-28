@@ -1,0 +1,72 @@
+:root {
+    --black: #17252A;
+    --dark_blue: #2B7A78;
+    --blue: #3AAFA9;
+    --light_blue: #DEF2F1;
+    --white: #FEFFFF;
+
+    --nunito: 'Nunito', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --protest_riot: 'Protest Riot', sans-serif;
+    --viga: 'Viga', sans-serif;
+}
+
+.learn-container {
+    padding: 20px;
+}
+
+.learn-heading {
+    font-family: var(--poppins);
+    color: var(--black);
+    align-items: center;
+    text-align: center;
+}
+
+.region-info {
+    font-family: var(--nunito);
+    color: var(--dark_blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+
+.city-card {
+    background-color: var(--light_blue);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.city-card:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.city-card:hover .city-name {
+    color: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+.city-name {
+    font-family: var(--viga);
+    color: var(--dark_blue);
+    margin-bottom: 10px;
+}
+
+.temple-list {
+    list-style: square;
+    padding: 0;
+    padding: 10px;
+}
+
+.temple-list li {
+    font-family: var(--nunito);
+    color: var(--black);
+}

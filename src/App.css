@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --black: #17252A;
+    --dark_blue: #2B7A78;
+    --blue: #3AAFA9;
+    --light_blue: #DEF2F1;
+    --white: #FEFFFF;
+
+    /* --nunito: 'Nunito', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --protest_riot: 'Protest Riot', sans-serif;
+    --viga: 'Viga', sans-serif;
+    --Whisper: 'Whisper', sans-serif; */
+    --nunito: 'Arial', sans-serif;
+--poppins: 'Tahoma', sans-serif;
+--protest_riot: 'Times New Roman', serif;
+--viga: 'Verdana', sans-serif;
+--Whisper: 'Georgia', serif;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, var(--blue) 0%, var(--dark_blue) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh var(--light_blue);
+}

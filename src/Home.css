@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Viga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+
+
+:root {
+    --black: #17252A;
+    --dark_blue: #2B7A78;
+    --blue: #3AAFA9;
+    --light_blue: #DEF2F1;
+    --white: #FEFFFF;
+    --crimson: #ce1036;
+
+
+    --nunito: 'Nunito', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --protest_riot: 'Protest Riot', sans-serif;
+    --viga: 'Viga', sans-serif;
+    --Gajraj: "Gajraj One", sans-serif;
+    --Whisper: "Whisper", sans-serif;
+    --Arya: "Arya", sans-serif;
+}
+
+/*
+
+colours used in the project
+
+#17252A - black 
+#2B7A78 - dark_blue 
+#3AAFA9 - blue 
+#DEF2F1 - light_blue 
+#FEFFFF - white
+
+fonts used in the project
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Viga&display=swap')
+
+*/
+
+.home-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('./images/sanchi-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    background-blend-mode: darken, luminosity;
+}
+
+.home-banner-text {
+    z-index: 1;
+}
+
+.home-heading {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 8rem;
+    margin-bottom: 20px;
+    color: var(--light_blue);
+
+}
+
+#hdesc {
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+    text-wrap: wrap;
+    padding: 2rem;
+    font-family: var(--Arya);
+    font-size: 1.2rem;
+    margin: 0 auto;
+    font-weight: 100;
+    font-weight: bolder;
+    /* background-color: var(--light_blue); */
+    color: var(--white);
+
+}

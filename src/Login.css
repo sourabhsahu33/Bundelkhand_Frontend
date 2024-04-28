@@ -1,0 +1,9 @@
+#display_user_login {
+    width: 100%;
+    margin: 10px auto;
+    height: auto;
+    font-size: 1rem;
+    font-family: var(--poppins);
+    color: var(--crimson);
+    text-align: center;
+}

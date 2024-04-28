@@ -1,0 +1,150 @@
+#about {
+    width: 100%;
+    height: 90vh;
+    padding: 2rem;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.about_desc {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left_about,
+.right_about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.left_about {
+    /* background-color: var(--light_blue); */
+    z-index: 4;
+    /* border-radius: 30% 50% 30% 50%; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: animate 2s infinite ease-in-out;
+    /* border: 0.1rem solid var(--black); */
+}
+
+@keyframes animate {
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+.left_about h1 {
+    font-size: 6rem;
+    font-family: var(--Whisper);
+    color: var(--black);
+    font-weight: 200;
+    transform: rotate(-10deg);
+}
+
+.sub_ab {
+    font-size: 1rem;
+    font-family: var(--poppins);
+    transform: rotate(-10deg);
+    color: var(--dark_blue);
+}
+
+.about_head {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 4vh;
+    font-family: var(--poppins);
+    color: var(--black);
+}
+
+.right_about {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.para_right {
+    width: 80%;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-wrap: wrap;
+    font-family: var(--nunito);
+    z-index: 1;
+}
+
+.transnow {
+    font-family: var(--nunito);
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+
+    #about {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .about_head {
+        text-align: center;
+    }
+
+    .about_desc {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .left_about {
+        width: 100%;
+        height: 40vh;
+        background-color: var(--blue);
+        animation: none;
+        transform: rotate(10deg);
+        overflow: hidden;
+        margin-bottom: 2rem;
+        z-index: 1;
+    }
+
+    .right_about {
+        width: 100%;
+        z-index: 3;
+    }
+
+    .para_right {
+        width: 100%;
+        line-height: 4vh;
+        text-align: center;
+    }
+
+    .left_about h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        transform: rotate(-20deg);
+        color: var(--white);
+    }
+
+    .sub_ab {
+        display: none;
+    }
+}

@@ -1,0 +1,123 @@
+.navbar {
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark_blue);
+    color: var(--light_blue);
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.logo {
+    font-family: var(--viga);
+    font-size: 2rem;
+    margin: auto 0;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px var(--black);
+
+}
+
+.logo span {
+    color: var(--white);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    font-family: var(--Nunito);
+    color: var(--light_blue);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 1.3rem;
+    cursor: pointer;
+    background-color: var(--low_crimson);
+}
+
+.nav-link.active {
+    color: var(--black);
+    background-color: var(--light_blue);
+}
+
+.loggedoutbtn {
+    font-family: var(--Nunito);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0rem 2rem;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 0px;
+    border-radius: 0.2rem;
+}
+
+.menu,
+.loggedoutbtn_icon {
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    display: none;
+    background: none;
+    border: 0px;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+
+    .navbar {
+        height: 12vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        display: none;
+    }
+
+    .loggedoutbtn {
+        display: none;
+    }
+
+    .loggedoutbtn_icon {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        display: block;
+    }
+}
